@@ -20,7 +20,7 @@ function play() {
 
     //Welcome message and players names
     
-    players = { "X": prompt("Introduce the first Player name, who'll be \"X\" symbol"), "O": prompt("Introduce the second Player name, who'll be \"O\" symbol") };
+    players = { "X": prompt("Introduce the 1st Player name, who'll be \"X\" symbol"), "O": prompt("Introduce the 2nd Player name, who'll be \"O\" symbol") };
 
     //Creating the table score
     let newTableScore = document.createElement("div");
@@ -127,7 +127,7 @@ var check = (e) => {
             endOfGame();
 
         } else if (plays == 0) {
-            setTimeout(() => alert("Ohh! Both are very good at this, the game is a draw.\nLet's try once more!"), 100);
+            setTimeout(() => alert("Ohh! Both are very good at this, the game is a draw.\nLet's try once more! Better luck this time!"), 100);
             endOfGame();
         }
     }
